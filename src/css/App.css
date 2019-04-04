@@ -1,0 +1,45 @@
+.navbar-container{
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding-top: 2%;
+  width: 75%;
+}
+
+.sidebar-container{
+  background-color: #F9FAFC;
+  width:25%;
+  margin: 0;
+  padding: 0;
+  top:0;
+  bottom:0;
+  height: 100%;
+  overflow:hidden;
+}
+
+.back-button{
+  width: 33%;
+  padding-left: 3%
+}
+
+.main{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+body{
+  height: 100%;
+  width:100%;
+}
+
+.path-navigation {
+  width:66%;
+  font-family:ProximaNova-Regular;
+  color: #81878C;
+  font-size: 24px;
+}
+

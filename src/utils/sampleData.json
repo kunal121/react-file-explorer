@@ -1,0 +1,27 @@
+{
+  "root": {
+    "name":"root",
+    "type":"folder",
+    "children":["root/a","root/c"],
+    "path":"root"
+  },
+  "root/a":{
+    "name":"a",
+    "type":"folder",
+    "children":["root/a/b"],
+    "path":"root/a"
+
+  },
+  "root/c": {
+    "name":"c",
+    "type":"folder",
+    "children":[],
+    "path":"root/c"
+  },
+  "root/a/b": {
+    "name":"b",
+    "type":"folder",
+    "children":[],
+    "path":"root/a/b"
+  }
+}
