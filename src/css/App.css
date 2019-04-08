@@ -2,13 +2,25 @@
   display:flex;
   flex-direction:row;
   justify-content:flex-start;
-  padding-top: 2%;
   width: 75%;
 }
-
+.sideview-container {
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  padding-top: 2%;
+  width: 80%;
+}
+.view-container {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    margin-left: 2%;
+    margin-top: 2%;
+}
 .sidebar-container{
   background-color: #F9FAFC;
-  width:25%;
+  width:20%;
   margin: 0;
   padding: 0;
   top:0;
@@ -42,4 +54,156 @@ body{
   color: #81878C;
   font-size: 24px;
 }
+
+.type-folder,.type-file{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3%;
+    text-align: center;
+}
+
+.type-folder:hover{
+  background: #E6F5FF;
+  border-radius: 8px;
+}
+
+.add {
+  height: 70px;
+  width:70px;
+  padding-left:3%;
+  padding-top:1%;  
+  text-align: center;
+}
+
+.add-modal{
+  background: #FFFFFF;
+  border: 1px solid rgba(221,224,228,0.70);
+  box-shadow: 0 16px 64px 0 rgba(0,0,0,0.08);
+  border-radius: 8px;
+  height:auto;
+  width:30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 8%;
+}
+
+.close-button {
+  float:right;
+  padding-right: 3%;
+}
+
+.input-field {
+  background: #FFFFFF;
+  border: 1px solid #DDE0E4;
+  border-radius: 8px;
+  margin-left: 20%;
+  margin-top: 10%;
+  height: 20%;
+  width: 60%;
+  padding: 3%;
+}
+
+.create-button {
+  background: #4AB7FF;
+  border-radius: 8px;
+  font-family: AppleSystemUIFont;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  border: 1px solid #DDE0E4;
+  border-radius: 8px;
+  margin-left: 20%;
+  margin-top: 10%;
+  height: 20%;
+  width: 60%;
+  padding: 3%;
+}
+
+.form-heading {
+  font-family:AppleSystemUIFont;
+  font-size: 18px;
+  color: #2F363F;
+  letter-spacing: 0;
+  padding-top: 10%;
+  width:66.66%;
+  margin-left: 35%;
+  display: inline;
+}
+
+.item-type {
+  font-family:AppleSystemUIFont;
+  font-size: 14px;
+  color: #535B62;
+  margin-top: 10%;
+  letter-spacing: 0;
+  width:36%;
+  padding:2%;
+  margin-left: 33%;
+
+}
+
+.form-header {
+  margin-top: 10%;
+}
+
+.selected {
+  background-color: #4AB7FF;
+}
+
+.selected-item{
+  display: inline;
+  width:18%;
+  padding: 10%;
+  border: 1px solid #DDE0E4;
+  border-radius: 8px;
+  font-family:AppleSystemUIFont;
+  /* float: left; */
+}
+
+.sidebar-name {
+  font-family: Lato-Regular;
+  font-size: 16px;
+  color: #535B62;
+  letter-spacing: 0;
+  margin-left: 5%;
+}
+.element-container{
+  width: 100%;
+  padding: 5%;
+}
+
+.element-container:hover{
+  background:#EEEFF1;
+  border-radius: 8px;
+}
+
+.sidebar-element{  
+  /* padding-left: 4%; */
+  border-left: 1px solid black;
+  margin-left: 5%;
+}
+
+
+body,html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.make-down {
+  transform: rotate(180deg);
+  float: right;
+  margin-right: 5%;
+}
+
+.side-button {
+  float: right;
+  margin-right: 5%;
+}
+
+
 

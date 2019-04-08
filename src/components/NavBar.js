@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import '../css/App.css'
-import {arrowIcon,initialPath} from '../utils/constants.js'
+import {arrowIcon} from '../utils/constants.js'
 
 class NavBar extends Component {
-    constructor(props){
-        super(props)
-        this.state={
-            path:initialPath
+    changePathOnBackClick = () => {
+        const {currNavPath} = this.props
+        let splitarr = currNavPath.split('/')
+        if(splitarr.length > 1){
+            splitarr.pop()
+            const updatedPath = splitarr.join('/')
+            this.props.updatePathOnBackClick(updatedPath)
         }
     }
     render(){
@@ -16,7 +19,7 @@ class NavBar extends Component {
                     <img src={arrowIcon} alt="button to go back" />
                 </div>
                 <div className="path-navigation">
-                    {this.state.path}
+                    {this.props.currNavPath}
                 </div>
             </div>
         )
