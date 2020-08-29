@@ -1,27 +1,40 @@
 {
-  "root": {
-    "name":"root",
-    "type":"folder",
-    "children":["root/a","root/c"],
-    "path":"root"
-  },
-  "root/a":{
-    "name":"a",
-    "type":"folder",
-    "children":["root/a/b"],
-    "path":"root/a"
-
-  },
-  "root/c": {
-    "name":"c",
-    "type":"folder",
-    "children":[],
-    "path":"root/c"
-  },
-  "root/a/b": {
-    "name":"b",
-    "type":"folder",
-    "children":[],
-    "path":"root/a/b"
+    "root": {
+      "name":"root",
+      "type":"folder",
+      "children":["root/Documents","root/Pictures"],
+      "path":"root",
+      "date":"24 Aug 2019",
+      "size":"1Kb",
+      "creator":"kunal"
+    },
+    "root/Documents":{
+      "name":"Documents",
+      "type":"folder",
+      "children":["root/Documents/Attachments"],
+      "path":"root/Documents",
+      "date":"24 Aug 2019",
+      "size":"1Kb",
+      "creator":"kunal"
+  
+    },
+    "root/Pictures": {
+      "name":"Pictures",
+      "type":"folder",
+      "children":[],
+      "path":"root/Pictures",
+      "date":"24 Aug 2019",
+      "size":"1Kb",
+      "creator":"kunal"
+    },
+    "root/Documents/Attachments": {
+      "name":"Attachments",
+      "type":"folder",
+      "children":[],
+      "path":"root/Documents/Attachments",
+      "date":"24 Aug 2019",
+      "size":"1Kb",
+      "creator":"kunal"
+    }
   }
-}
+  

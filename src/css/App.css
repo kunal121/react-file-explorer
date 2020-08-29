@@ -1,40 +1,42 @@
-.navbar-container{
-  display:flex;
-  flex-direction:row;
-  justify-content:flex-start;
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   width: 75%;
+  margin-left: 2%;
 }
 .sideview-container {
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   padding-top: 2%;
   width: 80%;
 }
 .view-container {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content:flex-start;
-    margin-left: 2%;
-    margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 2%;
+  margin-top: 2%;
 }
-.sidebar-container{
-  background-color: #F9FAFC;
-  width:20%;
+.sidebar-container {
+  background-color: #f9fafc;
+  width: 20%;
   margin: 0;
   padding: 0;
-  top:0;
-  bottom:0;
+  top: 0;
+  bottom: 0;
   height: 100%;
-  overflow:hidden;
+  overflow: hidden;
+  padding-top: 1%;
 }
 
-.back-button{
-  width: 33%;
-  padding-left: 3%
+.back-button {
+  width: 10%;
+  padding-left: 3%;
 }
 
-.main{
+.main {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -43,46 +45,50 @@
   flex-direction: row;
 }
 
-body{
+body {
   height: 100%;
-  width:100%;
+  width: 100%;
 }
 
 .path-navigation {
-  width:66%;
-  font-family:ProximaNova-Regular;
-  color: #81878C;
+  width: 40%;
+  font-family: ProximaNova-Regular;
+  color: #81878c;
   font-size: 24px;
 }
 
-.type-folder,.type-file{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 3%;
-    text-align: center;
+.type-folder,
+.type-file {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3%;
+  width: 60px;
+  /* height: 65px; */
+  text-align: center;
 }
 
-.type-folder:hover{
-  background: #E6F5FF;
+.type-folder:hover,
+.type-file:hover {
+  background: #e6f5ff;
   border-radius: 8px;
 }
 
 .add {
   height: 70px;
-  width:70px;
-  padding-left:3%;
-  padding-top:1%;  
+  width: 70px;
+  padding-left: 3%;
+  padding-top: 1%;
   text-align: center;
 }
 
-.add-modal{
-  background: #FFFFFF;
-  border: 1px solid rgba(221,224,228,0.70);
-  box-shadow: 0 16px 64px 0 rgba(0,0,0,0.08);
+.modal-container {
+  background: #ffffff;
+  border: 1px solid rgba(221, 224, 228, 0.7);
+  box-shadow: 0 16px 64px 0 rgba(0, 0, 0, 0.08);
   border-radius: 8px;
-  height:auto;
-  width:30%;
+  height: auto;
+  width: 30%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -91,13 +97,13 @@ body{
 }
 
 .close-button {
-  float:right;
+  float: right;
   padding-right: 3%;
 }
 
 .input-field {
-  background: #FFFFFF;
-  border: 1px solid #DDE0E4;
+  background: #ffffff;
+  border: 1px solid #dde0e4;
   border-radius: 8px;
   margin-left: 20%;
   margin-top: 10%;
@@ -107,87 +113,105 @@ body{
 }
 
 .create-button {
-  background: #4AB7FF;
+  background: #4ab7ff;
   border-radius: 8px;
   font-family: AppleSystemUIFont;
   font-size: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
   letter-spacing: 0;
-  border: 1px solid #DDE0E4;
+  border: 1px solid #dde0e4;
   border-radius: 8px;
-  margin-left: 20%;
+  margin-left: 23%;
   margin-top: 10%;
   height: 20%;
   width: 60%;
   padding: 3%;
 }
 
-.form-heading {
-  font-family:AppleSystemUIFont;
+.form-heading,
+.info-heading {
+  font-family: AppleSystemUIFont;
   font-size: 18px;
-  color: #2F363F;
+  color: #2f363f;
   letter-spacing: 0;
   padding-top: 10%;
-  width:66.66%;
-  margin-left: 35%;
+  width: 66.66%;
+  margin-left: 40%;
   display: inline;
 }
 
 .item-type {
-  font-family:AppleSystemUIFont;
+  display: flex;
+  justify-content: center;
+  font-family: AppleSystemUIFont;
   font-size: 14px;
-  color: #535B62;
+  color: #535b62;
   margin-top: 10%;
-  letter-spacing: 0;
-  width:36%;
-  padding:2%;
-  margin-left: 33%;
-
 }
 
-.form-header {
+.item-detail {
+  font-family: AppleSystemUIFont;
+  font-size: 18px;
+  color: #535b62;
+  margin-top: 5%;
+  letter-spacing: 0;
+  width: 40%;
+  padding: 1%;
+  margin-left: 33%;
+}
+
+.item-image {
+  font-family: AppleSystemUIFont;
+  font-size: 14px;
+  color: #535b62;
+  margin-top: 10%;
+  letter-spacing: 0;
+  width: 36%;
+  padding: 2%;
+  margin-left: 35%;
+}
+
+.form-header,
+.info-header {
   margin-top: 10%;
 }
 
 .selected {
-  background-color: #4AB7FF;
+  background-color: #4ab7ff;
 }
 
-.selected-item{
+.selected-item {
   display: inline;
-  width:18%;
-  padding: 10%;
-  border: 1px solid #DDE0E4;
-  border-radius: 8px;
-  font-family:AppleSystemUIFont;
-  /* float: left; */
+  width: 18%;
+  padding: 2%;
+  border: 1px solid #dde0e4;
+  font-family: AppleSystemUIFont;
 }
 
 .sidebar-name {
   font-family: Lato-Regular;
   font-size: 16px;
-  color: #535B62;
+  color: #535b62;
   letter-spacing: 0;
   margin-left: 5%;
 }
-.element-container{
+.element-container {
   width: 100%;
   padding: 5%;
 }
 
-.element-container:hover{
-  background:#EEEFF1;
+.element-container:hover {
+  background: #eeeff1;
   border-radius: 8px;
 }
 
-.sidebar-element{  
-  /* padding-left: 4%; */
-  border-left: 1px solid black;
+.sidebar-element {
+  border-left: 1px solid #eeeff1;
   margin-left: 5%;
 }
 
-
-body,html {
+body,
+html {
   width: 100%;
   height: 100%;
   padding: 0;
@@ -205,5 +229,56 @@ body,html {
   margin-right: 5%;
 }
 
+.context-container {
+  width: 120px;
+  z-index: 1;
+  box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  position: fixed;
+}
 
+.context-option {
+  font-weight: 500;
+  z-index: 1;
+  font-size: 14px;
+  padding: 10px 40px 10px 20px;
+  cursor: pointer;
+}
 
+.context-option:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.search-container {
+  display: inline-flex;
+  flex: 1 1 300px;
+  position: relative;
+  border: 1px solid #dde0e4;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.search-button {
+  padding: 0.5rem;
+  color: white;
+  border: none;
+  padding: 2%;
+}
+
+.search-bar {
+  border: 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  font-size: 17px;
+  flex: 1;
+}
+.search-bar:focus {
+  outline: none;
+}
+
+.search-button:hover {
+  background: #ffffff;
+}
+
+.error-message {
+  margin-left: 25%;
+}
