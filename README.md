@@ -15,3 +15,6 @@
 ## `Technology Used`
 - React.js
 - CSS
+
+## `Deployed App`
+- https://react--explorer.herokuapp.com/
