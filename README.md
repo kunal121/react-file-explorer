@@ -16,5 +16,8 @@
 - React.js
 - CSS
 
+## `Purpose Of The Project`
+- Create in 2 days just to leverage my skills in react
+
 ## `Deployed App`
 - https://react--explorer.herokuapp.com/
